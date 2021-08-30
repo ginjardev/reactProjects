@@ -1,25 +1,15 @@
-// import logo from './logo.svg';
-import './App.css';
-import {BsHeartFill} from 'react-icons/bs'
+import Navigation from "./components/Navigation";
+import Homepage from "./pages/Homepage";
+import NavFooter from "./components/Button";
+import './App.css'
 
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <BsHeartFill style={{color: 'green'}}/>
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navigation/>
+      <Homepage/>
+      <NavFooter/>
     </div>
   );
 }

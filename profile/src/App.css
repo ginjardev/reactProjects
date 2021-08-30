@@ -1,37 +1,236 @@
-.App {
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
 
-.App-logo {
-  height: 20vmin;
-  pointer-events: none;
+#root{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Jost', sans-serif;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.App{
+  width: 100%;
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
 }
-
-.App-header {
-  background-color: #282c34;
-  /* min-height: 2%; */
+.nav-bar{
+  width: 65%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #ECF8FF;
+}
+nav{
   display: flex;
   align-items: center;
   justify-content: space-around;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 50%;
+}
+.icon{
+  display: flex;
+  align-items: center;
+  width: 16%;
+  justify-content: space-between;
+}
+li{
+  display: block;
+  padding: 4px 8px 4px 8px;
+}
+li a{
+  text-decoration: none;
+  color: #ECF8FF;
 }
 
-.App-link {
-  color: #61dafb;
+.contact{
+  border: 2px solid rgba(124, 201, 255, 0.41);
+  border-radius: 6px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.intro{
+  margin-top: 35px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.name{
+  /* color: #82F9A1; */
+  color: #B0FBBC;
+  line-height: 1.4em;
+  width: 65%;
+  text-shadow: 0px 0px 76px rgba(188, 251, 195, 0.3);
+}
+.work{
+  color: #ECF8FF;
+  width: 65%;
+  line-height: 2em;
+}
+.work .one a{
+  color: #1DA1F2;
+  text-decoration: underline;
+}
+.work .two a{
+  color: #ECF8FF;
+  text-decoration: underline;
+}
+.work .three a{
+  color:#EA4C89;
+  text-decoration: underline;
+}
+.articles{
+  width: 65%;
+  color:#ECF8FF;
+  margin-top: 60px;
+}
+.latest{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 0px;
+}
+.chevron{
+  display: flex;
+  align-items: center;
+}
+.chevy{
+  color: rgba(124, 201, 255, 0.55);
+  margin-left: 7px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.h3{
+  font-size: x-large;
+  font-weight: bolder;
+}
+.js{
+  color: yellow;
+  font-size: smaller;
+  margin-right: 6px;
+}
+.react{
+  color: #61DAFB;
+  font-size: smaller;
+  margin-right: 6px;
+}
+.storybook{
+  color: #EA4C89;
+  font-size: smaller;
+  margin-right: 6px;
+}
+.article{
+  display: flex;
+  align-items: baseline;
+}
+h4{
+  font-size: large;
+}
+h3 {
+  font-size: x-large;
+}
+.date{
+  margin-left: 20px;
+  margin-top: 0px;
+  padding: 0px;
+  display: inline;
+  color: #5E8CA7;
+}
+.btn{
+  border: 2px solid rgba(124, 201, 255, 0.41);
+  border-radius: 6px;
+  padding: 7px 20px 7px 20px;
+  color: #ECF8FF;
+  background-color: #1C2C35;
+  margin-top: 40px;
+}
+.btn .item3{
+  margin-top: 65px;
+}
+.projects{
+  color: #ECF8FF;
+  margin-top: 60px;
+  width: 65%;
+}
+.card{
+  border-left: 4px solid;
+  background: #1C2C35;
+  border-radius: 8px;
+  width: 100%;
+}
+.smallcard{
+  margin: 25px;
+}
+.grid{
+  display: grid;
+  grid-gap: 15px;
+  width: 100%;
+}
+.item1{
+  grid-column: 1/span 2;
+  grid-row: 1;
+}
+.item2{
+  grid-row: 2;
+}
+.item3 {
+  grid-row: 2;
+}
+.btn-chat{
+  border-radius: 6px;
+  padding: 7px 20px 7px 20px;
+  display: flex;
+  align-items: center;
+  width: auto;
+  font-weight: bolder;
+}
+.bc{
+  margin-right: 8px;
+}
+.reach{
+  margin-top: 90px;
+  width:100%;
+  background-color: #1C2C35;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hello{
+  color:#B0FBBC;
+}
+.what, .text{
+  text-align: center;
+}
+.what{
+  margin-top: 40px;
+}
+.text {
+  color: #ECF8FF;
+}
+.green-btn{
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.footer{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.wrapper{
+  margin-top: 40px;
+  
+  margin-bottom: 30px;
+  width: 65%;
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+}
+.copyright{
+  color: #B8C1C7;
+  width: 50%;
+}
+.contact-icons{
+  display: flex;
+  align-items: center;
+  width: 12%;
+  justify-content: space-around;
+  color:#ECF8FF;
 }
