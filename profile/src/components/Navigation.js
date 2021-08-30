@@ -8,13 +8,15 @@ const Navigation = () => {
     return (
         <div className="nav-bar">
             <div className="icon">
+                <Link to="/">
                 <img src={Icon}  alt="heart"/>
-                <h4>INI - UBONG</h4>
+                <h4>ginjarDev</h4>
+                </Link>
             </div>
             <nav>
-                <li><Link>Articles</Link></li>
+                <li><Link to="/src/pages/Articles.js">Articles</Link></li>
                 <li><Link>Snippet</Link></li>
-                <li><Link>About</Link></li>
+                <li><Link to="/src/pages/About.js">About</Link></li>
                 <li className="contact"><Link>Contact</Link></li>
             </nav>
         </div>

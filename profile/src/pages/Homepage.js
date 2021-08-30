@@ -8,7 +8,7 @@ import {SiStorybook} from 'react-icons/si'
 import {MdChatBubbleOutline} from 'react-icons/md'
 import Card from '../components/Card'
 import Button from '../components/Button'
-import NavFooter from '../components/NavFooter'
+import Footer from '../components/Footer'
 
 const cards = [1, 2, 3];
 const Homepage = () => {
@@ -88,7 +88,7 @@ const Homepage = () => {
                     
                 </div>
             </div>
-            {/* <NavFooter/> */}
+            <Footer/>
         </div>
     )
 }

@@ -26,9 +26,14 @@ nav{
   width: 50%;
 }
 .icon{
+  width: 13%;
+  justify-content: space-between;
+}
+.icon a{
+  text-decoration: none;
+  color: #ECF8FF;
   display: flex;
   align-items: center;
-  width: 16%;
   justify-content: space-between;
 }
 li{
@@ -233,4 +238,54 @@ h3 {
   width: 12%;
   justify-content: space-around;
   color:#ECF8FF;
+}
+.articlesBody{
+  width:100%;
+  color:#ECF8FF;
+}
+.articlesSection{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50vh;
+}
+.articlesSide{
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.content{
+  width: 100%;
+  margin-top: 35px;
+}
+.articlesH1{
+  text-align: left;
+  width: 100%;
+}
+.time{
+  color: #5E8CA7;
+}
+.about{
+  width: 100%;
+  color: #ECF8FF;
+  margin-top: 25px;
+}
+.about1{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.aboutwrapper{
+  width: 65%;
+  margin-bottom: 50vh;
+}
+.blue{
+  color: #61DAFB;
+}
+.about3{
+  margin-top: 55px;
+}
+.detail1 div, .detail2 div{
+  margin-top: 30px;
 }
