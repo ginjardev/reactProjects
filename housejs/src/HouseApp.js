@@ -6,20 +6,20 @@ import Loader from './Loader'
 import axios from 'axios'
 
 const HouseApp = () => {
-    const [balance, setBalance] = useState(1000000)
+    const [balance, setBalance] = useState(100000)
     const [loading, setLoading] = useState(true)
     const [pillar, setPillar] = useState(0)
 
     useEffect(
         ()=> {
-            axios.get('http://localhost:5000/pillar').
-            then((response)=>{
+            axios.get('http://localhost:5000/pillar')
+            .then((response)=>{
                 let pillarPrice = response.data.price
                 let pillarAmount = balance / pillarPrice
                 setPillar(pillarAmount)
-            }).
-            catch((error)=>console.error(error)).
-            finally(()=> setLoading(false))
+            })
+            .catch((error)=>console.error(error))
+            .finally(()=> setLoading(false))
         }, [balance]
     )
 
