@@ -8,32 +8,28 @@ import {useState} from 'react'
 
 function App() {
 
-  const [home, setHome] = useState(true)
-  const changeHome = ()=> {
-    setHome(!home)
-    console.log(home)
-  }
+  const [link, setLink] = useState('home')
 
- const [about, setAbout] = useState(false)
-
- const changeAbout = ()=> {
-   setAbout(!about)
-   setHome(!home)
- }
-
- const [contact, setContact] = useState(false)
-
- const changeContact = ()=> {
-   setContact(!contact)
-   setHome(!home)
- }
+ const routes = [
+   {
+     title:'home',
+     component: Home
+   },
+   {
+    title:'about',
+    component: About
+  },
+  {
+    title:'contact',
+    component: Contact
+  },
+ ]
 
   return (
     <div className="App">
-      <Nav changeHome= {changeHome} changeAbout= {changeAbout} changeContact ={changeContact} />
-      <Home displayStyle='blue'/>
-      <About displayStyle={about? 'block': ''}/>
-      <Contact displayStyle={contact? 'block': ''}/>
+      <Nav setLink={setLink}/>
+
+      {routes.map(route => route.title === link ? <route.component/> : '') }
     </div>
   );
 }
