@@ -1,11 +1,11 @@
 import React from 'react'
 
-const Nav = ({changeContact, changeAbout, changeHome}) => {
+const Nav = ({setLink}) => {
     return (
         <nav className="nav">
-            <li onClick={()=>changeHome()}>Home</li>
-            <li onClick={()=>changeAbout()}>About</li>
-            <li onClick={()=>changeContact()}>Contact</li>
+            <li onClick={()=>setLink('home')}>Home</li>
+            <li onClick={()=>setLink('about')}>About</li>
+            <li onClick={()=>setLink('contact')}>Contact</li>
         </nav>
     )
 }
