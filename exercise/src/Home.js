@@ -1,9 +1,9 @@
 import React from 'react'
 
-const Home = (displayStyle) => {
+const Home = ({displayStyle}) => {
 
     return (
-        <div className="home" style={{color: displayStyle}}>
+        <div className="home" style={{display: displayStyle}}>
             <div>
             <h3>Home</h3>
             There are many variations of passages of Lorem Ipsum
